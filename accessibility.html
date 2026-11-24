@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Accessibility Statement - Logan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{--background:#F4F2ED;--foreground:#121210;--muted:#5a564e;--accent:#121210}
+@media (prefers-color-scheme: dark){:root{--background:#0E0E0C;--foreground:#F4F2ED;--muted:#b8b3a8;--accent:#F4F2ED}}
+*{box-sizing:border-box} body{margin:0;font-family:"Archivo",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--background);color:var(--foreground);line-height:1.65}
+a{color:inherit;text-decoration:underline} a:focus-visible{outline:3px solid var(--foreground);outline-offset:3px}
+.skip-link{position:fixed;top:-100px;left:1rem;z-index:999;background:var(--foreground);color:var(--background);font-weight:700;padding:.75rem 1rem;border-radius:0 0 8px 8px;text-decoration:none}
+.skip-link:focus{top:0}
+header{padding:1rem 1.25rem;border-bottom:1px solid rgba(128,128,128,.35);display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+header a.brand{color:var(--foreground);text-decoration:none;font-weight:800;letter-spacing:-.02em;font-size:1.35rem}
+main{max-width:760px;margin:0 auto;padding:2rem 1.25rem 4rem}
+h1{letter-spacing:-.03em;font-size:2.25rem;margin:.5rem 0;line-height:1.1}
+h2{letter-spacing:-.02em;margin:2rem 0 .5rem;font-size:1.35rem}
+p,li{font-size:1.05rem} .meta{color:var(--muted)}
+footer{max-width:760px;margin:0 auto;padding:1.5rem 1.25rem 3rem;border-top:1px solid rgba(128,128,128,.35);display:flex;gap:1.25rem;flex-wrap:wrap}
+footer a{color:var(--foreground)}
+.notice{border:1px solid var(--foreground);padding:1rem;border-radius:12px}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header><a class="brand" href="index.html">Logan</a><a href="index.html">Back to home</a></header>
+<main id="main">
+<p class="meta">Effective: November 23, 2026. Last updated: November 23, 2026.</p>
+<h1>Accessibility Statement</h1>
+
+<p>Logan wants this site to be usable by everyone, including people who use a keyboard, a screen reader, or other assistive technology.</p>
+<h2>1. Our standard</h2>
+<p>Our goal is to meet WCAG 2.1 Level AA, the Web Content Accessibility Guidelines. That is the standard most US businesses use for ADA compliance. We are not there yet on every part of the demo. The known gaps are listed below, honestly, so you know what we are fixing.</p>
+<h2>2. What works today</h2>
+<ul>
+<li>The site uses real headings, labels, and buttons, not just styled text.</li>
+<li>Buttons and folder tiles have a visible focus outline.</li>
+<li>The site respects reduced-motion settings: the scroll reveal, magnetic button, and folder animations are reduced or removed when reduced motion is requested.</li>
+<li>The site supports light and dark color schemes from the visitor's system setting.</li>
+<li>The demo message form and the create-load form use labeled inputs.</li>
+<li>A skip link has been added at the top of the home page, so keyboard users can jump to the main content.</li>
+<li>There is no video or audio on this site, so no captions or transcript are needed today.</li>
+</ul>
+<h2>3. Known issues we are fixing</h2>
+<ul>
+<li><strong>Contrast needs a measured check.</strong> Light text on the dark Dispatch panel, dark text on the light Drivers panel, and muted text throughout have not been measured against WCAG contrast ratios yet. We will test and darken text or backgrounds where it fails.</li>
+<li><strong>The Enter button is hidden until the scroll reveal finishes.</strong> It appears only at scroll progress 0.98. Keyboard users must scroll through the reveal to reach it, and the reveal itself is driven by scrolling. We will review a direct keyboard path to Enter.</li>
+<li><strong>Single-page demo navigation.</strong> Dispatch and Drivers are views inside one page, with no separate URLs. That makes it harder to share or return to a section, and harder for some assistive tools to track where you are. We will review this when the real service launches.</li>
+<li><strong>Demo dashboards are heavily visual.</strong> The folder grid, dock, and simulated map rely on icons and position. Screen reader labels exist on the main panels, but the folder and section flows have not had a full screen reader pass yet.</li>
+</ul>
+<h2>4. Feedback and help</h2>
+<p>If you cannot use part of this site, tell us what page, what device and browser you used, and what happened. We will try to provide the information another way, for example by email, while we fix the page.</p>
+<p>Contact: <a href="mailto:info@radioplayinc.com">info@radioplayinc.com</a>.</p>
+<h2>5. Ongoing work</h2>
+<p>We will re-check accessibility each time we add a section, a feature, or a video, and update this statement when a known issue is fixed.</p>
+
+<p><a href="index.html">Back to home</a></p>
+</main>
+<footer><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="cookies.html">Cookie Policy</a><a href="accessibility.html">Accessibility Statement</a><a href="refunds.html">Refunds and Payments</a></footer>
+</body>
+</html>
